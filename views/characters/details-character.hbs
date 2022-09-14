@@ -4,3 +4,12 @@
 <h3> Occupation: {{ character.occupation }} </h3>
 
 <p> Weapon: {{ character.weapon }} </p>
+
+<p>Debt: {{character.debt}}</p>
+
+<form action="/character/{{character.id}}/edit">
+    <button>Edit?</button>
+</form>
+<form action="/character/{{character.id}}/delete" method="post">
+    <button>Delete?</button>
+</form>
